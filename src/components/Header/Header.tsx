@@ -1,7 +1,7 @@
 import React from "react";
 import LogoWhite from "../../assets/logo/white.svg";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className='bg-primary-blue flex justify-between px-40 pt-8 pb-64'>
       <img src={LogoWhite} alt='logo' className='logo' />
