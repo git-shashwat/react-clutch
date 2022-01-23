@@ -1,12 +1,19 @@
 import React from "react";
+import Pagination from "../Pagination/Pagination";
+import Slogan from "../Slogan/Slogan";
 
 const SloganMaker: React.FC = () => {
   const [searchText, setSearchText] = React.useState("");
   const [searchTerm, setSearchTerm] = React.useState("");
+  const slogans = [
+    "There is no Sore it will Not Heal, No cool it will not Subdue.",
+    "Review the facts cool is the best.",
+    "coziness building for tomorrow",
+  ];
 
   return (
-    <div className='px-40'>
-      <div className='flex flex-col px-48 py-16 bg-black-100 -mt-36 shadow-inner rounded-lg text-left shadow-black-95'>
+    <div className='px-40 pb-[90rem] bg-black-98'>
+      <div className='absolute top-40 left-40 right-40 flex flex-col px-48 py-16 bg-black-100 shadow-inner rounded-lg text-left shadow-black-95'>
         <h1 className='font-semibold text-4xl tracking-tighter text-black-12 mb-4'>
           Free slogan maker
         </h1>
@@ -36,13 +43,33 @@ const SloganMaker: React.FC = () => {
         {/* List of results */}
         <div className='mt-14'>
           {searchTerm ? (
-            <div className='flex justify-between'>
-              <h5 className='text-xl text-black-12'>
-                We have generated 1,023 slogans for “{searchTerm}”
-              </h5>
-              <button className='text-primary-blue px-6 py-2 text-sm border border-primary-blue rounded'>
-                Download all
-              </button>
+            <div className='flex-col gap-9'>
+              <div className='flex justify-between'>
+                <h5 className='text-xl text-black-12'>
+                  We have generated 1,023 slogans for “{searchTerm}”
+                </h5>
+                <a
+                  className='text-primary-blue px-6 py-2 text-sm border border-primary-blue rounded'
+                  href='results.json'
+                  download={`slogans_for_${searchTerm}.json`}
+                >
+                  Download all
+                </a>
+              </div>
+              {/* two column list of items */}
+              <div className='grid grid-cols-2 gap-x-8 mt-9 gap-y-5'>
+                {/* render Slogan 12 times */}
+                {Array(18)
+                  .fill(0)
+                  .map((_, i) => (
+                    <Slogan key={i} slogan={slogans[i % 3]} />
+                  ))}
+              </div>
+              <div className='mt-11 w-full border-t border-black-85' />
+              {/* pagination */}
+              <div className='flex justify-between mt-7'>
+                <Pagination />
+              </div>
             </div>
           ) : (
             <h5 className='text-xl text-black-12'>
