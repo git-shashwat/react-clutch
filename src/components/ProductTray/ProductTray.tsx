@@ -11,7 +11,7 @@ const ProductTray: React.FC = () => {
       <h1 className='font-semibold text-4xl tracking-tight text-left mb-12'>
         Try our other free products
       </h1>
-      <div className='grid grid-cols-2 gap-4 lg:grid-cols-4'>
+      <div className='flex-col md:grid md:grid-cols-2 gap-4 lg:grid-cols-4'>
         <Product
           title='Privacy Policy Generator'
           description='Stock your store with 100s of products and start selling to customers in minutes, without the hassle of inventory or packaging.'
