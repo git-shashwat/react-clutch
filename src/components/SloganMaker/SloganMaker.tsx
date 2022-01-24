@@ -14,7 +14,7 @@ const SloganMaker: React.FC = () => {
   return (
     <div className='px-40 pb-20 w-full table bg-black-98'>
       <div className='flex flex-col px-48 py-16 bg-black-100 -mt-36 shadow-inner rounded-lg text-left shadow-black-95'>
-        <h1 className='font-semibold text-4xl tracking-tighter text-black-12 mb-4'>
+        <h1 className='font-semibold text-4xl tracking-tight text-black-12 mb-4'>
           Free slogan maker
         </h1>
         <p className='text-black-30 text-xl'>
