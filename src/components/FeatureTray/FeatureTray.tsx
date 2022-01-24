@@ -6,8 +6,8 @@ import StandOutIcon from "../../assets/icons/web/2.svg";
 
 const FeatureTray = () => {
   return (
-    <div className='bg-primary-blue bg-opacity-5 px-40 py-20'>
-      <div className='grid grid-cols-3 gap-4'>
+    <div className='bg-primary-blue bg-opacity-5 px-8 py-4 md:px-40 md:py-20'>
+      <div className='flex flex-col md:grid md:grid-cols-3 gap-4'>
         <Feature
           title='Search'
           description='Simply add a keyword or a term related to your business in the slogan maker search box. Wait for the magic to happen.'

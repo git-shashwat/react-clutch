@@ -3,7 +3,7 @@ import LogoWhite from "../../assets/logo/white.svg";
 
 const Header: React.FC = () => {
   return (
-    <header className='bg-primary-blue flex justify-between px-40 pt-8 pb-64'>
+    <header className='bg-primary-blue px-8 pb-40 gap-2 flex md:justify-between md:px-40 pt-8 md:pb-64'>
       <img src={LogoWhite} alt='logo' className='logo' />
       <div className='flex gap-8'>
         <button className='text-black-100'>Sign In</button>

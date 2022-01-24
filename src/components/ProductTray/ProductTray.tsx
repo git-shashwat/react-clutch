@@ -7,7 +7,7 @@ import Product from "../Product/Product";
 
 const ProductTray: React.FC = () => {
   return (
-    <div className='bg-black-100 px-40 py-20 flex-col'>
+    <div className='bg-black-100 px-8 py-4 md:px-40 md:py-20 flex-col'>
       <h1 className='font-semibold text-4xl tracking-tight text-left mb-12'>
         Try our other free products
       </h1>

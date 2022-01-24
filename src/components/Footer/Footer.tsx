@@ -4,10 +4,10 @@ import IndiaFlag from "../../assets/images/India.png";
 
 const Footer: React.FC = () => {
   return (
-    <footer className='flex flex-col bg-black-12 px-40 py-8'>
+    <footer className='flex flex-col bg-black-12 px-8 py-4 md:px-40 md:py-8'>
       <div className='flex flex-col items-center flex-wrap justify-around md:flex-row'>
-        <img src={LogoWhite} alt='logo' className='logo' />
-        <div className='flex flex-col gap-y-4'>
+        <img src={LogoWhite} alt='logo' className='logo mb-4 md:mb-0' />
+        <div className='mb-4 flex flex-col md:gap-y-4 md:mb-0'>
           <a className='text-black-100' href='/'>
             Contact
           </a>
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             FAQ's
           </a>
         </div>
-        <div className='flex flex-col gap-y-4'>
+        <div className='mb-4 flex flex-col md:gap-y-4 md:mb-0'>
           <a className='text-black-100' href='/'>
             Tutorials
           </a>
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             Blog
           </a>
         </div>
-        <div className='flex flex-col gap-y-4'>
+        <div className='mb-4 flex flex-col md:gap-y-4 md:mb-0'>
           <a className='text-black-100' href='/'>
             Privacy
           </a>
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             Banned Items
           </a>
         </div>
-        <div className='flex flex-col gap-y-4'>
+        <div className='mb-4 flex flex-col md:gap-y-4 md:mb-0'>
           <a className='text-black-100' href='/'>
             About
           </a>
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             </div>
           </a>
         </div>
-        <div className='flex flex-col gap-y-4'>
+        <div className='flex flex-col md:gap-y-4'>
           <a className='text-black-100' href='/'>
             Facebook
           </a>
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className='mt-11 w-full border-t border-black-100 border-opacity-20' />
-      <div className='flex justify-between mt-6'>
+      <div className='flex flex-col md:flex-row justify-between mt-6'>
         <p className='text-black-100'>Dukaan 2020, All rights reserved.</p>
         <p className='flex justify-center items-center gap-2 text-black-100'>
           Made in{" "}
