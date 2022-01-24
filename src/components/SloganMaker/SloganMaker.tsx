@@ -12,8 +12,8 @@ const SloganMaker: React.FC = () => {
   ];
 
   return (
-    <div className='px-40 pb-[90rem] bg-black-98'>
-      <div className='absolute top-40 left-40 right-40 flex flex-col px-48 py-16 bg-black-100 shadow-inner rounded-lg text-left shadow-black-95'>
+    <div className='px-40 pb-20 w-full table bg-black-98'>
+      <div className='flex flex-col px-48 py-16 bg-black-100 -mt-36 shadow-inner rounded-lg text-left shadow-black-95'>
         <h1 className='font-semibold text-4xl tracking-tighter text-black-12 mb-4'>
           Free slogan maker
         </h1>
@@ -21,7 +21,7 @@ const SloganMaker: React.FC = () => {
           Simply enter a term that describes your business, and get up to 1,000
           <br /> relevant slogans for free.
         </p>
-        <div className='mt-12 flex flex-col gap-2 w-1/3'>
+        <div className='mt-12 flex flex-col gap-2 lg:w-1/3'>
           <label className='text-black-30'>Word for your slogan</label>
           <input
             type='search'
@@ -44,7 +44,7 @@ const SloganMaker: React.FC = () => {
         <div className='mt-14'>
           {searchTerm ? (
             <div className='flex-col gap-9'>
-              <div className='flex justify-between'>
+              <div className='flex justify-between items-start'>
                 <h5 className='text-xl text-black-12'>
                   We have generated 1,023 slogans for “{searchTerm}”
                 </h5>

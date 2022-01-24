@@ -9,14 +9,14 @@ const Pagination = () => {
         <button className='text-black-100 bg-primary-blue text-sm w-6 h-6 rounded-full'>
           1
         </button>
-        <button className='text-black-100 bg-primary-blue text-sm w-6 h-6 rounded-full'>
+        <button className='text-primary-blue text-sm w-6 h-6 rounded-full'>
           2
         </button>
-        <button className='text-black-100 bg-primary-blue text-sm w-6 h-6 rounded-full'>
+        <button className='text-primary-blue text-sm w-6 h-6 rounded-full'>
           3
         </button>
         <p className='text-primary-blue text-sm'>...</p>
-        <button className='text-black-100 bg-primary-blue text-sm w-6 h-6 rounded-full'>
+        <button className='text-primary-blue text-sm w-6 h-6 rounded-full'>
           21
         </button>
       </div>
